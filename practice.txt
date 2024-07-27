@@ -1,0 +1,4 @@
+create class person with properties name and age with following features so default age of person should be 18 and person object initialized with age and name and method to display name and age
+
+
+
