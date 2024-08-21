@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with All Input Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Form with All Input Elements</h2>
+
+<form action="#" method="post">
+    <ul>
+        <!-- Text Input -->
+        <li>
+            <label for="text">Text:</label>
+            <input type="text" id="text" name="text">
+        </li>
+
+        <!-- Password Input -->
+        <li>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </li>
+
+        <!-- Email Input -->
+        <li>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </li>
+
+        <!-- Number Input -->
+        <li>
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number">
+        </li>
+
+        <!-- Date Input -->
+        <li>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+        </li>
+
+        <!-- Time Input -->
+        <li>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+        </li>
+
+        <!-- DateTime-Local Input -->
+        <li>
+            <label for="datetime-local">Date and Time:</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local">
+        </li>
+
+        <!-- Month Input -->
+        <li>
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month">
+        </li>
+
+        <!-- Week Input -->
+        <li>
+            <label for="week">Week:</label>
+            <input type="week" id="week" name="week">
+        </li>
+
+        <!-- URL Input -->
+        <li>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url">
+        </li>
+
+        <!-- Tel Input -->
+        <li>
+            <label for="tel">Telephone:</label>
+            <input type="tel" id="tel" name="tel">
+        </li>
+
+        <!-- Color Input -->
+        <li>
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color">
+        </li>
+
+        <!-- Range Input -->
+        <li>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="100">
+        </li>
+
+        <!-- Checkbox Input -->
+        <li>
+            <label for="checkbox">Checkbox:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" checked>
+        </li>
+
+        <!-- Radio Button Input -->
+        <li>
+            <label>Radio Buttons:</label>
+            <input type="radio" id="radio1" name="radio" value="option1" checked>
+            <label for="radio1">Option 1</label>
+            <input type="radio" id="radio2" name="radio" value="option2">
+            <label for="radio2">Option 2</label>
+        </li>
+
+        <!-- File Input -->
+        <li>
+            <label for="file">File:</label>
+            <input type="file" id="file" name="file">
+        </li>
+
+        <!-- Select Dropdown -->
+        <li>
+            <label for="select">Select:</label>
+            <select id="select" name="select">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </li>
+
+        <!-- Textarea -->
+        <li>
+            <label for="textarea">Textarea:</label>
+            <textarea id="textarea" name="textarea" rows="4"></textarea>
+        </li>
+
+        <!-- Submit Button -->
+        <li>
+            <button type="submit">Submit</button>
+        </li>
+    </ul>
+</form>
+
+</body>
+</html>

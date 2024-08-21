@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Default Values</title>
+</head>
+<body>
+
+<h2>Form with Default Values</h2>
+
+<form action="#" method="post">
+    <!-- Text Input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="bhuvana"><br />
+    
+    <!-- Email Input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="abc@example.com"><br />
+    
+    <!-- Password Input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" value="123@abc"><br />
+    
+    <!-- Number Input -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" value="28"><br />
+    
+    <!-- Date Input -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" value="1995-08-23"><br />
+    
+    <!-- Color Input -->
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="color" value="#4CAF50"><br />
+    
+    <!-- Range Input -->
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" name="volume" min="0" max="80" value="30"><br />
+    
+    <!-- Checkbox Input -->
+    <label for="UG">UG Completed:</label>
+    <input type="checkbox" id="UG" name="UG" checked><br />
+    
+    <!-- Radio Input -->
+    <label>Gender:</label>
+    <input type="radio" id="female" name="gender" value="female" checked>
+    <label for="female">Female</label>
+    <input type="radio" id="male" name="gender" value="male" >
+    <label for="male">Male</label><br />
+    
+    
+    <!-- Select Dropdown -->
+    <label for="State">State:</label>
+    <select id="State" name="State">
+        <option value="c" selected>Covai</option>
+        <option value="m">Madhurai</option>
+        <option value="s">Selam </option>
+    </select><br /><br />
+    
+    <!-- Textarea -->
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments">comments section.</textarea>
+    
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
