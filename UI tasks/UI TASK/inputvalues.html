@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+    
     <title>Form with All Input Elements</title>
     <style>
         body {
@@ -17,12 +20,13 @@
             margin-bottom: 20px;
         }
         label {
+            width: 300px;
             font-weight: bold;
-            display: block;
+            display: inline-block;
             margin-bottom: 5px;
         }
         input, textarea, select {
-            width: 100%;
+            width: 250px;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
@@ -131,9 +135,9 @@
         </li>
 
         <!-- Radio Button Input -->
-        <li>
+        <li >
             <label>Radio Buttons:</label>
-            <input type="radio" id="radio1" name="radio" value="option1" checked>
+            <input type="radio" id="radio1"  width="100px"   name="radio" value="option1" checked>
             <label for="radio1">Option 1</label>
             <input type="radio" id="radio2" name="radio" value="option2">
             <label for="radio2">Option 2</label>
