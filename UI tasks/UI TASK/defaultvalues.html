@@ -3,65 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form with Default Values</title>
+    <title >form with Default values</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        title{
+            text-align: center;
+        }
+        form {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 10px 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        label {
+            text-align: right;
+            padding-right: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            grid-column: 2 / span 1;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
 
-<h2>Form with Default Values</h2>
+<h2 style="text-align: center;">Form with Default Values</h2>
 
 <form action="#" method="post">
-    <!-- Text Input -->
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" value="bhuvana"><br />
-    
-    <!-- Email Input -->
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" value="abc@example.com"><br />
-    
-    <!-- Password Input -->
+    <!-- default Text Input -->
+    <label for="text">Text:</label>
+    <input type="text" id="text" name="text" value="bhuvana">
+
+    <!--default Password Input -->
     <label for="password">Password:</label>
-    <input type="password" id="password" name="password" value="123@abc"><br />
+    <input type="password" id="password" name="password" value="bhuvi@24">
+
+    <!--default Email Input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="bhuvi23@gmail.com">
+
+    <!--default Number Input -->
+    <label for="number">Number:</label>
+    <input type="age" id="number" name="number" value="10">
+
+    <!-- default Date Input -->
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" value="2023-08-15">
+
+    <!-- default Time Input -->
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" value="12:30">
+
+    <!-- default DateTime-Local Input -->
+    <label for="datetime-local">Date and Time:</label>
+    <input type="datetime-local" id="datetime-local" name="datetime-local" value="2023-08-15T12:30">
+
+    <!-- default Month Input -->
+    <label for="month">Month:</label>
+    <input type="month" id="month" name="month" value="2023-08">
+
+    <!-- default Week Input -->
+    <label for="week">Week:</label>
+    <input type="week" id="week" name="week" value="2023-W33">
+
+    <!--default  URL Input -->
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url" value="https://www.google.com">
+
+    <!-- default Tel Input -->
+    <label for="tel">Telephone:</label>
+    <input type="tel" id="tel" name="tel" value="2233447">
+
+    <!-- default Color Input -->
+    <label for="color">Color:</label>
+    <input type="color" id="color" name="color" value="#ff0034">
+
+    <!-- default  Range Input -->
+    <label for="range">Range:</label>
+    <input type="range" id="range" name="range" min="0" max="100" value="50">
+
     
-    <!-- Number Input -->
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age" value="28"><br />
     
-    <!-- Date Input -->
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob" value="1995-08-23"><br />
-    
-    <!-- Color Input -->
-    <label for="color">Favorite Color:</label>
-    <input type="color" id="color" name="color" value="#4CAF50"><br />
-    
-    <!-- Range Input -->
-    <label for="volume">Volume:</label>
-    <input type="range" id="volume" name="volume" min="0" max="80" value="30"><br />
-    
+
     <!-- Checkbox Input -->
-    <label for="UG">UG Completed:</label>
-    <input type="checkbox" id="UG" name="UG" checked><br />
+    <label for="ug">UG completed:</label>
+    <input type="checkbox" id="ug" name="ug" checked>
+
     
-    <!-- Radio Input -->
-    <label>Gender:</label>
-    <input type="radio" id="female" name="gender" value="female" checked>
-    <label for="female">Female</label>
-    <input type="radio" id="male" name="gender" value="male" >
-    <label for="male">Male</label><br />
-    
-    
-    <!-- Select Dropdown -->
-    <label for="State">State:</label>
-    <select id="State" name="State">
-        <option value="c" selected>Covai</option>
-        <option value="m">Madhurai</option>
-        <option value="s">Selam </option>
-    </select><br /><br />
-    
-    <!-- Textarea -->
-    <label for="comments">Comments:</label>
-    <textarea id="comments" name="comments">comments section.</textarea>
-    
+<!--default  Radio Input--> 
+<label>Gender:</label>
+<div>
+<input type="radio" id="male" name="gender" value="male" checked>
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+</div> 
+
+    <!-- default File Input -->
+    <label for="file">File:</label>
+    <input type="file" id="file" name="file">
+
+     <!--default  Select Dropdown -->
+     
+
+    <!-- default Textarea -->
+    <label for="textarea">Textarea:</label>
+    <textarea id="textarea" name="textarea" rows="4">comments here.....</textarea>
+
     <!-- Submit Button -->
     <button type="submit">Submit</button>
 </form>
