@@ -22,12 +22,17 @@
             font-size: 24px;
         }
         .search-bar {
+            display: block;
+            width: 400px;
+            margin-top: 25px;
             padding: 5px; /* Adjust the padding for height */
-            border-radius: 5px;
+            border-radius: 10px;
             border: none;
             font-size: 16px;
-            background-color: #333;
+            background-color: #404244;
+            
         }
+        
         .navbar-text {
             flex-grow: 1;
             text-align: center;
@@ -35,19 +40,28 @@
         }
         .sidebar {
             background-color: #333;
-            height: 500px;
-            border-radius: 10px;
+            height: 550px;
+            border-radius: 20px;
             padding: 10px;
+            margin-top: 30px;
+            margin-right: 40px; /* Added margin to create space between sidebar and content */
         }
         .content-card {
             background-color: #333;
-            height: 150px;
-            border-radius: 10px;
-            margin-bottom: 20px;
+            height: 130px; /* Reduced height of the cards */
+            border-radius: 20px;
+            padding: 15px;
+            margin-top:50PX;
+            margin-left: 30px;
+            margin-right: 20px;
         }
-        .sidebar, .content-card {
-            color: white;
-            padding: 20px;
+        .large-content-card {
+            border-radius: 15px;
+            height: 180px; /* Reduced height of the large card */
+            margin-top: 100px; /* Added margin to create space between content cards and large card */
+        }
+        .content-area {
+            margin-top: 20px; /* Added margin to create space between the search bar and the content */
         }
         
     </style>
@@ -69,20 +83,20 @@
     <div class="container mt-4">
         <div class="row">
             <!-- Left Sidebar -->
-            <div class="col-md-3">
+            <div class="col-md-4"> <!-- Increased width of the sidebar from 3 to 4 columns -->
                 <div class="sidebar">
                     <!-- Sidebar content here -->
                 </div>
             </div>
             <!-- Main Content Area -->
-            <div class="col-md-9">
+            <div class="col-md-8"> <!-- Adjusted the main content area to occupy the remaining 8 columns -->
                 <div class="row mb-4 justify-content-center">
                     <div class="col-md-6">
                         <input type="text" class="form-control search-bar" placeholder="Search">
                     </div>
                 </div>
     
-                <div class="row">
+                <div class="row g-3 content-area">
                     <div class="col-md-4">
                         <div class="content-card">
                             <!-- Card content here -->
@@ -90,7 +104,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="content-card">
-                            <!-- Card content here-->
+                            <!-- Card content here -->
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -99,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-card" style="height: 200px;">
+                <div class="content-card large-content-card">
                     <!-- Large card content here -->
                 </div>
             </div>
